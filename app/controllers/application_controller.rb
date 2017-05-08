@@ -3,7 +3,7 @@
 # See ProtectedController and OpenReadController
 class ApplicationController < ActionController::API
   # Force to wants JSON for API
-  before_action :api_request_settings
+  before_action :api_request_settings, :authenticate
   def api_request_settings
     request.format = :json
   end

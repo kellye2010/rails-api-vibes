@@ -1,5 +1,6 @@
 class PlaylistsController < ApplicationController
   before_action :set_playlist, only: [:show, :update, :destroy]
+  before_action :authenticate, only: [:show, :create, :update, :destroy]
 
   # GET /playlists
   def index
@@ -10,14 +11,15 @@ class PlaylistsController < ApplicationController
 
   # GET /playlists/1
   def show
-    # @playlist = Playlist.find(params[:id])
+    @playlist = Playlist.find(params[:id])
+    @playlist = current_user.playlists.build(playlist_params)
     render json: @playlist
   end
 
   # POST /playlists
   def create
-    @playlist = Playlist.new(playlist_params)
-
+    # @playlist = Playlist.new(playlist_params)
+    @playlist = current_user.playlists.build(playlist_params)
     if @playlist.save
       render json: @playlist, status: :created, location: @playlist
     else
@@ -38,10 +40,13 @@ class PlaylistsController < ApplicationController
   # DELETE /playlists/1
   def destroy
     # @playlist = Playlist.find(params[:id])
+    # @playlist = current_user.playlists.build(playlist_params)
     @playlist.destroy
+    head :no_content
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_playlist
       @playlist = Playlist.find(params[:id])
