@@ -29,8 +29,8 @@ Create Playlists Inspired By Your Moods - Your Vibes.
 
 2nd Iteration Resources (intended) to include:
 
--Playlist_Songs
--Songs
+- Playlist_Songs
+- Songs
 
 3rd Iteration Resources (intended) to include:
 - Artists
