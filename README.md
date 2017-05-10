@@ -1,7 +1,6 @@
-[![General Assembly Logo](http://imgur.com/dO2Tb07)](https://generalassemb.ly/education/web-development-immersive)
-
-
 GA Project 2 ReadME
+![logo-imgur](https://cloud.githubusercontent.com/assets/4691419/25890317/0e6b2d14-353b-11e7-9b48-358a08948e04.png)
+
 # Vibes
 
 - Live Deployed App: [Vibes](https://kellye2010.github.io/vibes/)
@@ -19,7 +18,7 @@ Create Playlists Inspired By Your Moods - Your Vibes.
 
 ## Data Model (Entity Relationship Diagram)
 
-
+![vibes-erdplus-diagram](https://cloud.githubusercontent.com/assets/4691419/25890338/17ebb552-353b-11e7-91e4-5a72c8dcd4eb.png)
 
 1st Iteration Resources include:
 
