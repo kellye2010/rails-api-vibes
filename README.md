@@ -4,7 +4,7 @@
 
 - Live Deployed App: [Vibes](https://kellye2010.github.io/vibes/)
 - Live API: [Vibes API](https://vibesforyou.herokuapp.com/)
-- API GitHub Repository: [kellye2010/rails-api-vibes](https://github.com/kellye2010/rails-api-vibes)
+- Front-end GitHub Repository: [kellye2010/vibes](https://github.com/kellye2010/vibes)
 
 ## About Vibes
 
