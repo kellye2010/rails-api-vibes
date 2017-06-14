@@ -8,8 +8,3 @@ curl "${API}${URL_PATH}/$ID" \
   --header "Authorization: Token token=$TOKEN"
 
 echo
-
-curl http://localhost:4741/users \
-  --include \
-  --request GET \
-  --header "Authorization: Token token=$TOKEN"
